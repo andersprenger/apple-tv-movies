@@ -12,6 +12,8 @@
 		71A949CD27F642CE00D2696F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A949CB27F642CE00D2696F /* Main.storyboard */; };
 		71A949CF27F642CF00D2696F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A949CE27F642CF00D2696F /* Assets.xcassets */; };
 		71A949D227F642CF00D2696F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A949D027F642CF00D2696F /* LaunchScreen.storyboard */; };
+		71A949D927F6598800D2696F /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A949D827F6598800D2696F /* MovieCell.swift */; };
+		71A949DB27F65E4200D2696F /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A949DA27F65E4200D2696F /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		71A949CC27F642CE00D2696F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71A949CE27F642CF00D2696F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71A949D127F642CF00D2696F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71A949D827F6598800D2696F /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		71A949DA27F65E4200D2696F /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 				71A949C727F642CE00D2696F /* AppDelegate.swift */,
 				71A949C927F642CE00D2696F /* ViewController.swift */,
 				71A949CB27F642CE00D2696F /* Main.storyboard */,
+				71A949DA27F65E4200D2696F /* Movie.swift */,
+				71A949D827F6598800D2696F /* MovieCell.swift */,
 				71A949CE27F642CF00D2696F /* Assets.xcassets */,
 				71A949D027F642CF00D2696F /* LaunchScreen.storyboard */,
 			);
@@ -135,6 +141,8 @@
 			files = (
 				71A949CA27F642CE00D2696F /* ViewController.swift in Sources */,
 				71A949C827F642CE00D2696F /* AppDelegate.swift in Sources */,
+				71A949DB27F65E4200D2696F /* Movie.swift in Sources */,
+				71A949D927F6598800D2696F /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
