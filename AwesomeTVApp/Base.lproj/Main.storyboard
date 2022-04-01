@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sf3-IW-vU4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sf3-IW-vU4">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zev-fU-NWk">
@@ -29,7 +29,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="kl8-7n-Mdx"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="75" minimumInteritemSpacing="0.0" id="tC5-A5-DMy">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="85" minimumInteritemSpacing="0.0" id="tC5-A5-DMy">
                                     <size key="itemSize" width="450" height="350"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -50,12 +50,13 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="450" height="288"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="450" id="2hq-Vr-oFE"/>
+                                                                <constraint firstAttribute="height" constant="288" id="OG6-HH-IOi"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zo-9k-rhm">
-                                                            <rect key="frame" x="179" y="296" width="92" height="46"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Title]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enablesMarqueeWhenAncestorFocused="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zo-9k-rhm">
+                                                            <rect key="frame" x="175" y="296" width="100" height="46"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
@@ -94,6 +95,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Watch Now" selectedImage="film.fill" catalog="system" id="FUT-AX-PKX"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="Sf3-IW-vU4" id="MNi-WC-mqk"/>
                         <outlet property="collectionView" destination="Zev-fU-NWk" id="C0g-x1-Mcu"/>
                     </connections>
                 </viewController>

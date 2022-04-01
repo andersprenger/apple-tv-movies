@@ -16,7 +16,21 @@ class MovieCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-//        movieTitle.isHidden = true
+        movieImage.layer.cornerRadius = 10
+        movieTitle.isHidden = true
     }
     
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        if context.nextFocusedView == self {
+            coordinator.addCoordinatedAnimations {
+                self.movieTitle.isHidden = false
+                self.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            }
+        } else if context.previouslyFocusedView == self {
+            coordinator.addCoordinatedAnimations {
+                self.movieTitle.isHidden = true
+                self.transform = .identity
+            }
+        }
+    }
 }
